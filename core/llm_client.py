@@ -74,7 +74,9 @@ def transcribe_audio(audio_bytes: bytes, model_name: str = "openai/whisper-large
     load_dotenv(dotenv_path=env_path, override=True)
     api_key = os.getenv("HF_TOKEN")
     
-    api_url = f"https://api-inference.huggingface.co/models/{model_name}"
+    # Hugging Face recently deprecated api-inference.huggingface.co
+    # and moved serverless inference to the new router URL.
+    api_url = f"https://router.huggingface.co/hf-inference/models/{model_name}"
     headers = {
         "Authorization": f"Bearer {api_key.strip()}",
         "Content-Type": "audio/wav"
