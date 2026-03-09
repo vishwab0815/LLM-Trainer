@@ -1,0 +1,8 @@
+streamlit
+pandas
+scikit-learn
+pydantic
+python-dotenv
+huggingface_hub
+plotly
+streamlit-mic-recorder

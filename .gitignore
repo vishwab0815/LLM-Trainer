@@ -1,0 +1,21 @@
+# Environments
+venv/
+env/
+.venv/
+.env/
+
+# Sensitive Information
+.env
+
+# Python Cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Streamlit specific
+.streamlit/credentials.toml
+
+# OS generated files
+.DS_Store
+Thumbs.db

@@ -1,0 +1,228 @@
+{
+  "intents": [
+    {
+      "name": "greeting",
+      "examples": [
+        "howdy",
+        "yo",
+        "good evening",
+        "hola",
+        "greetings",
+        "anybody there",
+        "hi",
+        "good afternoon",
+        "hello",
+        "good morning",
+        "what's up",
+        "hey there",
+        "hey",
+        "hi bot"
+      ],
+      "entities": []
+    },
+    {
+      "name": "book_flight",
+      "examples": [
+        "reserve a ticket to Pune",
+        "I need to fly out to Berlin tomorrow",
+        "schedule my flight to Rome in 2 days",
+        "I want to go to Rome Monday",
+        "book a flight to London",
+        "need a flight to Paris for Monday",
+        "schedule my flight to Tokyo next week",
+        "schedule my flight to Rome Monday",
+        "I want to go to Amsterdam Jan 15",
+        "get me a flight to Hyderabad",
+        "I need to fly out to Delhi December 25th",
+        "I need to fly out to Tokyo next week",
+        "need a flight to Delhi for tomorrow",
+        "can you book a trip to Bangalore",
+        "find flights heading to Bangalore December 25th"
+      ],
+      "entities": [
+        "location",
+        "date"
+      ]
+    },
+    {
+      "name": "order_food",
+      "examples": [
+        "deliver a paneer tikka to my house",
+        "order me a sushi",
+        "I want to eat steak",
+        "bring me french fries",
+        "order me a curry",
+        "I would like to order pizza",
+        "I would like to order biryani",
+        "place an order for chicken wings",
+        "I want a paneer tikka",
+        "bring me pizza",
+        "I'm craving ramen",
+        "I want a burger",
+        "bring me noodles",
+        "deliver a chicken wings to my house",
+        "I'm craving biryani"
+      ],
+      "entities": [
+        "food_item"
+      ]
+    },
+    {
+      "name": "check_weather",
+      "examples": [
+        "climate info for Los Angeles",
+        "what is the weather in Paris",
+        "do I need an umbrella in London this weekend",
+        "do I need an umbrella in Mumbai next year",
+        "do I need an umbrella in Dubai next Tuesday",
+        "show me the weather for Paris",
+        "will it rain tomorrow in London",
+        "is it raining in Chicago",
+        "how is the weather in Paris ASAP",
+        "weather forecast for London",
+        "what is the weather in Singapore",
+        "will it rain Jan 15 in Los Angeles",
+        "what is the weather in Amsterdam",
+        "how is the weather in Berlin today",
+        "show me the weather for Tokyo"
+      ],
+      "entities": [
+        "location",
+        "date"
+      ]
+    },
+    {
+      "name": "cancel_order",
+      "examples": [
+        "please stop my order",
+        "do not deliver order 12345",
+        "I want to cancel order ORD-999",
+        "I changed my mind, cancel my pizza order",
+        "I changed my mind, cancel my burger order",
+        "I need to cancel my purchase",
+        "refund my order A-4521",
+        "I want to cancel order A-4521",
+        "cancel my order ORD-123",
+        "cancel my order B-9982",
+        "can you cancel order A-4521 please",
+        "abort order ORD-999",
+        "abort order 12345",
+        "do not deliver order 77889",
+        "cancel my order 12345"
+      ],
+      "entities": [
+        "order_id",
+        "food_item"
+      ]
+    },
+    {
+      "name": "track_order",
+      "examples": [
+        "check the status of ORD-123",
+        "when will my paneer tikka arrive",
+        "when will my pasta arrive",
+        "how long for delivery",
+        "is my order B-9982 on the way",
+        "where is my order ORD-123",
+        "when will my chicken wings arrive",
+        "status of order 77889",
+        "when will my burger arrive",
+        "when will my dosa arrive",
+        "track order A-4521",
+        "check the status of ORD-999",
+        "when will my curry arrive",
+        "where is my order B-9982",
+        "status of order ORD-999"
+      ],
+      "entities": [
+        "order_id",
+        "food_item"
+      ]
+    },
+    {
+      "name": "talk_to_human",
+      "examples": [
+        "customer service please",
+        "let me speak to a representative",
+        "get me a live agent",
+        "human support",
+        "speak to someone real",
+        "I want a human",
+        "connect me to an agent",
+        "I need to talk to a person"
+      ],
+      "entities": []
+    }
+  ],
+  "entities": {
+    "location": [
+      "Delhi",
+      "Mumbai",
+      "Chennai",
+      "Bangalore",
+      "Hyderabad",
+      "Kolkata",
+      "Pune",
+      "London",
+      "New York",
+      "Paris",
+      "Tokyo",
+      "Dubai",
+      "Singapore",
+      "Sydney",
+      "Chicago",
+      "Los Angeles",
+      "Toronto",
+      "Berlin",
+      "Rome",
+      "Amsterdam"
+    ],
+    "date": [
+      "tomorrow",
+      "today",
+      "next week",
+      "this weekend",
+      "Monday",
+      "Friday",
+      "Jan 15",
+      "December 25th",
+      "next month",
+      "in 2 days",
+      "tonight",
+      "next Tuesday",
+      "this afternoon",
+      "next year",
+      "ASAP"
+    ],
+    "food_item": [
+      "pizza",
+      "biryani",
+      "burger",
+      "sandwich",
+      "pasta",
+      "sushi",
+      "tacos",
+      "salad",
+      "steak",
+      "noodles",
+      "fried rice",
+      "dosa",
+      "idli",
+      "paneer tikka",
+      "french fries",
+      "chicken wings",
+      "pad thai",
+      "curry",
+      "ramen"
+    ],
+    "order_id": [
+      "12345",
+      "98765",
+      "A-4521",
+      "B-9982",
+      "ORD-123",
+      "ORD-999",
+      "77889"
+    ]
+  }
+}
